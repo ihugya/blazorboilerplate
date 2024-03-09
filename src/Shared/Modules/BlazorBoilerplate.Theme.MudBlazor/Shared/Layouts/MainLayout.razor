@@ -13,8 +13,9 @@
         <MudDrawer @bind-Open="@_navMenuOpened" Elevation="2">
             <MudDrawerHeader>
                 <div class="drawer-logo">
-                    <img alt="@appState.AppName" class="logo-img" src=@($"{Module.ContentPath}/images/cornerstone.png") title="@appState.AppName">
-                    <a href="/">@appState.AppName</a>
+                    <a href="/">
+                        <img alt="@appState.AppName" class="logo-img" src=@($"{Module.ContentPath}/images/cornerstone.png") title="@appState.AppName">
+                    </a>
                 </div>
             </MudDrawerHeader>
             <UserProfile />
